@@ -5,15 +5,15 @@
 class KeepassTui < Formula
   desc "Terminal interface for KeePass databases"
   homepage "https://github.com/chatilah/keepass-tui"
-  version "0.1.0"
+  version "0.1.2"
   depends_on :macos
 
   if Hardware::CPU.arm?
     url "https://github.com/chatilah/keepass-tui/releases/download/v#{version}/keepass-tui-macos-arm64.tar.gz"
-    sha256 "7abe85229809cf0a211426e2069770e0fdde47c14784d58428f6cae120e63471"
+    sha256 "14571264da5387a1a13a81c5f4983b88aeb797b1170418e581135b0e14a1445b"
   else
     url "https://github.com/chatilah/keepass-tui/releases/download/v#{version}/keepass-tui-macos-x86_64.tar.gz"
-    sha256 "f72636c6a97fcc9f3b994edf231f91452d4fd3726d240834253398fdce08cb32"
+    sha256 "f776da125e3dee3b6711b02ec12c7165cf88473b5512702ea5ee4a678c4f1cb5"
   end
 
   def install
